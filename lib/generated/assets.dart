@@ -3,7 +3,8 @@ class Assets {
   Assets._();
 
   static const String animationsSplash = 'assets/animations/splash.json';
-  static const String modelsBest = 'assets/models/best.tflite';
+  static const String assetsModelsBest = 'assets/models/best.torchscript';
+  static const String modelsBest = 'assets/models/best.pt';
   static const String modelsLabels = 'assets/models/labels.txt';
 
 }

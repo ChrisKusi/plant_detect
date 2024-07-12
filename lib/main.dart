@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:plant_detect/splashScreen.dart'; // Import your splash screen widget
 import 'package:plant_detect/home.dart';
+
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -20,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const SplashScreen(),
         '/home': (context) => const Home(), // Replace with your actual home screen route
+
       },
     );
   }

@@ -3,6 +3,7 @@ plugins {
     id "kotlin-android"
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
+
 }
 
 def localProperties = new Properties()
@@ -60,6 +61,5 @@ flutter {
 }
 
 dependencies {
-    implementation("org.tensorflow:tensorflow-lite:2.10.0") // Or the latest version
 
 }

@@ -457,7 +457,7 @@ class _HomeState extends State<Home> {
                     icon: const Icon(Icons.photo_library),
                     label: const Text("Pick Gallery"),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Colors.green,
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                       textStyle: const TextStyle(fontSize: 16, color: Colors.white),
                       iconColor: Colors.white,
@@ -467,7 +467,9 @@ class _HomeState extends State<Home> {
                 ],
               ),
               const SizedBox(height: 30),
-              if (isLoading) const CircularProgressIndicator(),
+              if (isLoading) const CircularProgressIndicator(
+                color: Color(0xFF004d40),
+              ),
               if (!isLoading)
                 ElevatedButton.icon(
                   onPressed: runObjectDetection,
@@ -475,7 +477,7 @@ class _HomeState extends State<Home> {
                   label: const Text("Detect Disease"),
                   
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.orange,
+                    backgroundColor: const Color(0xFF004d40),
                     padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                     textStyle: const TextStyle(fontSize: 16, color: Colors.white),
                     iconColor: Colors.white,

@@ -223,7 +223,7 @@ class _HomeState extends State<Home> {
               Container(
                 margin: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.grey),
+                  border: Border.all(color: const Color(0xFF004d40),),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 height: 300,
@@ -249,7 +249,7 @@ class _HomeState extends State<Home> {
                     icon: const Icon(Icons.camera_alt),
                     label: const Text("Take Photo"),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
+                      backgroundColor: const Color(0xFF004d40),
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                       textStyle: const TextStyle(fontSize: 16, color: Colors.white),
                       iconColor: Colors.white,
@@ -261,7 +261,7 @@ class _HomeState extends State<Home> {
                     icon: const Icon(Icons.photo_library),
                     label: const Text("Pick Gallery"),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
+                      backgroundColor: const Color(0xFF004d40),
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                       textStyle: const TextStyle(fontSize: 16, color: Colors.white),
                       iconColor: Colors.white,

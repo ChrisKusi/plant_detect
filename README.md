@@ -91,7 +91,7 @@ flutter build apk --release
 
 
 ## License
-    This project is licensed under the MIT License. See the LICENSE file for details.
+    This project is licensed under the Eclipse Public License. See the LICENSE file for details.
 
 ## Contact
 - Project Maintainer: Christian Kusi

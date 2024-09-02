@@ -49,6 +49,7 @@ dependencies:
   camera: ^0.11.0+2
   exif: ^3.3.0
   location: ^7.0.0
+  curved_navigation_bar: ^1.0.6
 
 
   path: any

@@ -95,7 +95,7 @@ flutter build apk --release
 
 ## Contact
 - Project Maintainer: Christian Kusi
-- Email: your-email@example.com
+- Email: christian.kusi@st.vvu.edu.gh
 - GitHub: ChrisKusi
 
 Feel free to customize this `README.md` further based on specific details of your project. If you need additional sections or modifications, let me know!

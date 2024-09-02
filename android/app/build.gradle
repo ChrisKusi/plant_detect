@@ -114,8 +114,11 @@ android {
 
     buildTypes {
         release {
-            shrinkResources false
-            minifyEnabled false
+            // Enable ProGuard to shrink and minify the APK size
+            minifyEnabled true
+            shrinkResources true
+            // Use ProGuard for code obfuscation
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig = signingConfigs.debug
         }
     }

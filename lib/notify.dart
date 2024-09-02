@@ -23,7 +23,7 @@ class _NotifyState extends State<Notify> {
   }
 
   Future<void> _loadUserData() async {
-    final response = await http.get(Uri.parse('http://192.168.0.140:5000/get_user_data'));
+    final response = await http.get(Uri.parse('https://plant-disease-backend-epc9.onrender.com/get_user_data'));
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       setState(() {
@@ -46,7 +46,7 @@ class _NotifyState extends State<Notify> {
         'organization': _organizationController.text,
       };
       final response = await http.post(
-        Uri.parse('http://192.168.209.79:5000/save_user_data'),
+        Uri.parse('https://plant-disease-backend-epc9.onrender.com/save_user_data'),
         headers: {'Content-Type': 'application/json'},
         body: json.encode(userData),
       );

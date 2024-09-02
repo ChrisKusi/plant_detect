@@ -189,7 +189,7 @@ class _HomeState extends State<Home> {
     });
 
     try {
-      final uri = Uri.parse('http://192.168.0.140:5000/detect');
+      final uri = Uri.parse('https://plant-disease-backend-epc9.onrender.com/detect');
       final request = http.MultipartRequest('POST', uri);
       request.files.add(
         http.MultipartFile.fromBytes(

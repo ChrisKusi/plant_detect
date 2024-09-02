@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
       });
 
       // Navigate to home screen after another 2 seconds
-      Future.delayed(const Duration(seconds: 2), () {
+      Future.delayed(const Duration(seconds: 4), () {
         Navigator.pushReplacementNamed(context, '/home'); // Replace '/home' with your actual route
       });
     });

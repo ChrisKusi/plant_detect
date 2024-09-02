@@ -107,7 +107,7 @@ android {
     defaultConfig {
         applicationId = "com.plantdetect.plant_detect"
         minSdkVersion 23
-        targetSdk = 33
+        targetSdkVersion 33
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }
@@ -126,9 +126,18 @@ flutter {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.20"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.20"
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'com.google.android.gms:play-services-location:21.3.0'
     implementation 'com.google.android.material:material:1.12.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.20'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.8.20'
+    }
 }

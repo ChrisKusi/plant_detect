@@ -250,6 +250,7 @@ class _HomeState extends State<Home> {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
+        padding: const EdgeInsets.only(bottom: kBottomNavigationBarHeight + 50),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
